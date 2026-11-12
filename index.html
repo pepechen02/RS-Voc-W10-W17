@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RS Finalterm Vocabulary Words</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Varela+Round&display=swap");
+@font-face{font-family:"jf-huninn";src:local("jf-openhuninn-2.0"),local("jf-openhuninn-2.1"),local("jf open 粉圓"),url("https://cdn.jsdelivr.net/gh/justfont/open-huninn-font@master/font/jf-openhuninn-2.0.ttf") format("truetype");font-display:swap}
+:root{--bg:#eef6fb;--card:#fff;--ac:#4a9be8;--ac-d:#2a6fc0;--ac-l:#e0eefc;--tx:#33425b;--mu:#7d8ca3;--bd:#d5e5f5}
+*{box-sizing:border-box}
+body{margin:0;font-family:"jf-huninn","Zen Maru Gothic","Varela Round","Hiragino Maru Gothic ProN","Yu Gothic","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;background:linear-gradient(160deg,#eef6fb,#f6f0fb);color:var(--tx);display:flex;min-height:100vh}
+aside{width:290px;flex-shrink:0;background:rgba(255,255,255,.75);backdrop-filter:blur(6px);border-right:1px solid var(--bd);border-radius:0 28px 28px 0;padding:20px 14px;position:sticky;top:0;height:100vh;overflow:auto}
+aside h3{font-size:19px;margin:22px 8px 8px;color:var(--ac-d)}
+.nav{display:block;width:100%;text-align:left;border:0;background:none;padding:11px 16px;border-radius:999px;font-size:18px;color:var(--tx);cursor:pointer;font-family:inherit}
+.nav.sub{padding-left:30px;color:var(--mu)}
+.nav:hover{background:var(--ac-l)}
+.nav.on{background:var(--ac);color:#fff}
+main{flex:1;padding:28px 32px;min-width:0}
+h1{margin:0;font-size:26px}
+.subt{color:var(--mu);margin:4px 0 20px}
+.tabs{display:inline-flex;background:var(--ac-l);border-radius:999px;padding:6px;gap:4px;margin-bottom:16px}
+.tabs button{border:0;background:none;padding:9px 24px;border-radius:999px;font-size:15px;font-weight:600;color:var(--mu);cursor:pointer;font-family:inherit}
+.tabs button.on{background:var(--ac);color:#fff}
+.btn{border:1px solid var(--bd);background:#fff;padding:9px 20px;border-radius:999px;font-size:15px;cursor:pointer;font-family:inherit;color:var(--tx)}
+.btn.p{background:var(--ac);color:#fff;border-color:var(--ac)}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;align-items:center}
+.badge{background:var(--ac-l);color:var(--ac-d);border-radius:20px;padding:3px 12px;font-size:13px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 6px 16px rgba(74,155,232,.1)}
+th{background:var(--ac-l);color:var(--ac);text-align:left;font-size:13px;padding:14px}
+td{padding:14px;border-top:1px solid var(--bd);font-size:15px;vertical-align:top}
+td.w{font-weight:700;font-size:17px}td.pos{font-style:italic;color:var(--mu)}td.zh{font-weight:700}td.tr{color:var(--mu)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--bd);border-top:6px solid var(--ac-d);border-radius:28px;min-height:230px;box-shadow:0 6px 16px rgba(74,155,232,.12);padding:18px;cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:center}
+.card.open{background:var(--ac-l);border-top-color:var(--bd)}
+.card .no{color:var(--mu);font-size:14px;margin-bottom:6px}
+.card .sp{border:0;background:var(--ac-l);color:var(--ac-d);font-weight:700;padding:12px;border-radius:999px;cursor:pointer;font-size:15px;font-family:inherit}
+.card .big{font-size:26px;font-weight:700;color:var(--ac-d)}
+.card .pos{font-style:italic;color:var(--mu)}.card .zh{font-weight:700}
+.card .en{font-size:14px;border-top:1px solid var(--bd);padding-top:10px}.card .tr{font-size:13px;color:var(--mu)}
+.q{background:#fff;border:1px solid var(--bd);border-left:5px solid var(--bd);border-radius:22px;padding:16px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
+.q .n{background:var(--ac-l);color:var(--ac-d);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.q .b{flex:1}.q p{margin:0 0 10px;line-height:1.6}
+.q input{width:100%;max-width:340px;padding:11px 14px;border:1px solid var(--bd);border-radius:999px;background:var(--bg);font-size:16px;font-family:inherit}
+.q.ok{border-left-color:#3a9d5d}.q.no{border-left-color:#d9534f}
+.fb{margin-top:8px;font-size:14px;font-weight:600}
+.score{font-size:18px;font-weight:700;margin:12px 0;color:var(--ac-d)}
+.soon{color:var(--mu);padding:60px 0;text-align:center}
+@media(max-width:760px){body{flex-direction:column}aside{width:100%;height:auto;position:static}main{padding:18px}}
+.ic{width:1.2em;height:1.2em;vertical-align:-.22em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-right:.4em}
+aside h3 .ic{width:1.4em;height:1.4em}
+.hero{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.hero .subt{margin-bottom:0}
+.card .ico{width:44px;height:44px;border-radius:50%;background:var(--ac-l);color:var(--ac-d);display:grid;place-items:center;margin:0 auto}
+.card .ico .ic{margin:0;width:22px;height:22px}
+</style>
+</head>
+<body>
+<aside id="side"></aside>
+<main>
+  <div class="hero"><div><h1>RS Finalterm Vocabulary Words</h1>
+  <div class="subt">W10–W17 · 共 80 個單字</div></div>
+  <svg width="170" height="70" viewBox="0 0 170 70" aria-hidden="true"><g fill="#fff" stroke="var(--bd)" stroke-width="2"><path d="M18 58a14 14 0 0 1 4-27 18 18 0 0 1 34 4 12 12 0 0 1 2 23z"/><path d="M112 64a10 10 0 0 1 2-19 13 13 0 0 1 25 3 9 9 0 0 1 1 16z"/></g><g transform="translate(66 6) scale(1.9)" fill="none" stroke="var(--ac)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></g></svg></div>
+  <div id="view"></div>
+</main>
+<script>
+const DATA={W10:[
+["panic","n.","恐慌","Panic is a feeling of strong fear that leaves someone unable to think clearly.","恐慌是一種強烈的恐懼，讓人無法清楚思考。","When the hero of the movie was in danger, the audience had a feeling of panic."],
+["favorable","adj.","有利的、良好的","Something that is favorable gives a benefit or contributes to success.","有利的事物會帶來好處或有助於成功。","He always makes a favorable impression because he is so friendly."],
+["porthole","n.","舷窗","A porthole is a small round window on a ship.","舷窗是船上的小圓窗。","I looked out the porthole in my cabin as the ship approached land."],
+["densely","adv.","濃密地","If something is covered densely, the covering is so thick that it is difficult to see through.","如果東西被濃密地覆蓋，覆蓋物厚到難以看透。","The ivy densely covered the house making it hard to see the window."],
+["reasonable","adj.","合理的","If something is reasonable, it is logical and easy to understand.","合理的事情有邏輯且容易理解。","It is reasonable for this father to think that his son knocked over the plant pot and spilled dirt on the ground."],
+["delirious","adj.","神志不清的","When someone is delirious, he or she is confused due to fever or illness.","神志不清是指因發燒或生病而意識混亂。","What illness was the cause of the character’s delirious feeling?"],
+["projected","v.","投射","When something is projected, light makes its image appear on another surface.","被投射時，光線讓影像出現在另一個表面上。","Why does a movie that is projected in 3-D seem so real?"],
+["contents","n.","內容、目錄","The contents of a document are the topics or subjects it includes.","文件的內容是它所包含的主題或項目。","Do you read the table of contents before you read a book?"],
+["deficiencies","n.","缺陷、不足","If something has deficiencies, it has weaknesses.","如果某物有缺陷，表示它有弱點。","Whole-grain pasta is a nutritious food in many ways, but it has some vitamin and mineral deficiencies."],
+["prose","n.","散文","Unlike poetry, prose is “ordinary writing,” in the form of sentences and paragraphs.","與詩不同，散文是以句子和段落寫成的「一般寫作」。","Which do you like better, prose or poetry?"]
+],"W11":[
+["uneducated","adj.","未受教育的","Having had little or no formal education at a school; showing a lack of education.","在學校幾乎沒有受過正規教育；顯示缺乏教育。","The uneducated man found it difficult to find a well-paid job."],
+["undecided","adj.","未決定的","Unable to make a choice.","無法做出選擇。","I’m still undecided (about) who to vote for."],
+["nonsense","n.","胡說八道、廢話","Ideas, statements or beliefs that you think are silly or not true.","你認為愚蠢或不真實的想法、說法或信念。","Don’t listen to him. He is talking nonsense again!"],
+["nonstick","adj.","不沾的","A pan covered with a substance that prevents food from sticking to it.","鍋子表面覆有可防止食物沾黏的物質。","My mom has plenty of nonstick pans."],
+["disown","v.","與…斷絕關係","To decide that you no longer want to be connected with or responsible for somebody or something.","決定不再與某人或某事有關聯或負責。","The girl’s family disowned her for marrying an old man who was twice her age."],
+["disuse","n.","廢棄、不用","A situation in which something is no longer being used.","某物不再被使用的狀態。","The typewriter fell into disuse twenty years ago."],
+["dusty","adj.","滿是灰塵的","To be covered in dust.","被灰塵覆蓋。","I wiped the dusty desk clean with a wet rag."],
+["sandy","adj.","多沙的","To be covered in sand.","被沙覆蓋。","I love the sandy beaches along the coast of Thailand."],
+["readily","adv.","輕易地、立即地","Quickly and without difficulty.","快速且毫不費力。","All ingredients are readily available from your local store."],
+["smoothly","adv.","順利地","Without problems or difficulties.","沒有問題或困難。","Today’s lesson went smoothly. The students understood everything."]
+],"W12":[
+["news","n.","新聞、消息","Information about something that has happened recently.","關於最近發生的事情的資訊。","Do you want the good news or the bad news first?"],
+["youth","n.","青春、年輕人","The time of life when a person is young.","人年輕的時期。","The youth today are used to using electronic devices."],
+["soon","adv.","不久、很快","in a short time from now, or a short time after something else has happened.","從現在起不久，或在另一件事發生後不久。","He promises to visit again soon."],
+["true","adj.","真實的、正確的","Something is correct or not false.","某事是正確的、不是假的。","The novel is based on a true story."],
+["stew","n.","燉菜","A dish of meat and/or vegetables cooked slowly in liquid.","用肉和／或蔬菜在液體中慢慢燉煮的菜餚。","Mother cooks great stews."],
+["choose","v.","選擇","To decide which thing or person you want out of the ones that are available.","從現有的事物或人當中決定你要哪一個。","There are several different options you can choose."],
+["weak","adj.","虛弱的","Not physically strong.","身體不強壯。","I was too weak to carry all the books by myself."],
+["loose","adj.","鬆動的、鬆的","Not fixed where it should be or able to become separated from something.","沒有固定在應在的位置，或可能與某物分離。","My loose tooth fell out while I was sleeping."],
+["dialogue","n.","對話","A conversation in a book, play or film.","書、戲劇或電影中的對話。","We use speech marks to show dialogue when we write."],
+["climax","n.","高潮","The most exciting or important event in a story.","故事中最刺激或最重要的事件。","Everything changes are the climax in a story."]
+],"W13":[
+["exclude","v.","排除","To deliberately not include something in what you are doing or considering.","刻意不把某物納入你正在做或考慮的事情中。","The naughty student was excluded from the lesson and had to stand outside the classroom."],
+["newspaper","n.","報紙","A set of large printed sheets of paper, or a website, containing news.","印有新聞的大張紙，或刊載新聞的網站。","Dad reads a newspaper every morning."],
+["routine","n.","例行公事、日常作息","The normal order and way in which you regularly do things.","你平常做事的正常順序和方式。","Try to make exercise a part of your daily routine."],
+["bassoon","n.","低音管（巴松管）","A musical instrument of the woodwind group. It is like a large wooden tube in shape with a double reed that you blow into, and produces notes with a low sound.","一種木管樂器，形狀像大木管，有可吹的雙簧片，發出低沉的音。","Not many people can play the bassoon."],
+["interview","v./n.","面試、訪談","A formal meeting at which somebody is asked questions to see if they are suitable for a particular job, or for a course of study at a college or university.","一種正式會面，會被提問以判斷是否適合某份工作或大學課程。","I had to answer a lot of questions at the interview for the job."],
+["review","v.","複習、回顧","to think or talk about something again in order to make changes to it or to remember it.","再次思考或談論某事，以便修改或記住它。","Don’t forget to review for your test tomorrow."],
+["confusing","adj.","令人困惑的","Difficult to understand or not clear.","難以理解或不清楚。","The students didn’t know what to do because the directions were confusing."],
+["rescue","v./n.","拯救","To save somebody/something from a dangerous or harmful situation.","把某人／某物從危險或有害的情況中救出。","The lifeguard rescued the boy when he had trouble swimming in the ocean."],
+["foreword","n.","前言、序","A short introduction at the beginning of a book, usually written by a person other than the author.","書前的簡短介紹，通常由作者以外的人撰寫。","The foreword explained the author’s purpose for writing the book."],
+["journal","n.","日記、日誌","A diary.","日記。","Many people keep a journal to record the day’s events."]
+],"W14":[
+["mysterious","adj.","神秘的","Something that is mysterious is not fully understood or explainable.","神秘的事物無法被完全理解或解釋。","Nobody knows what is in the mysterious box."],
+["matted","adj.","糾結的","Something that is matted is a tangled mess.","糾結的東西是亂成一團的。","The dog’s fur was so matted that we had to cut all the dog’s fur off."],
+["tendrils","n.","捲鬚","Tendrils of plants are long, thin sections that often twist around another plant.","植物的捲鬚是細長的部分，常會纏繞在其他植物上。","The plant had long tendrils that wrapped around the other plants."],
+["fastenings","n.","扣件、固定物","Fastenings attach objects to other things.","扣件把物品固定在其他東西上。","Dad repaired the fastenings that attached the door to the frame."],
+["awakening","adj.","喚醒的、醒來","If you are awakening someone, you are waking him or her from sleep.","如果你正在喚醒某人，就是把他從睡夢中叫醒。","The child began awakening at sunrise."],
+["mansion","n.","豪宅","A large, impressive house.","一棟大而氣派的房子。","England has many old mansions in the countryside."],
+["robin","n.","知更鳥","A small brown European bird with a red breast.","一種胸前是紅色的歐洲棕色小鳥。","The robin twittered happily in the garden."],
+["orchard","n.","果園","A piece of land in which fruit trees are grown.","種植果樹的土地。","The orchard is full of trees growing different kinds of apples and pears."],
+["arches","n.","拱門、拱形結構","Curved structures that support the weight of something above it.","支撐上方重量的彎曲結構。","There is a bridge with three arches near my house."],
+["mantle","n.","覆蓋層、披風","A layer of something that covers a surface.","覆蓋在表面上的一層東西。","In winter I love to see hills with a mantle of snow."]
+],"W15":[
+["bounced","v.","彈跳","If something bounces, it moves quickly away from a surface it has just hit or you make it do this.","東西彈跳時，會從剛撞到的表面快速彈開，或是你讓它這樣做。","I bounced the ball three times and threw it into the hoop."],
+["author","n.","作者","A person who writes books.","寫書的人。","The film is based on a novel written by a French author."],
+["rejoiced","v.","歡欣、歡喜","To show great happiness about something.","對某事表現出極大的喜悅。","We rejoiced when we heard school was cancelled because of a typhoon."],
+["loyal","adj.","忠誠的","Remaining constant in your support of somebody or something.","始終如一地支持某人或某事。","The loyal soldiers fought bravely for their country."],
+["grow","v.","生長、增長","To increase in size, number, strength or quality.","在大小、數量、力量或品質上增加。","The plant will grow into a tree eventually."],
+["ocean","n.","海洋","The mass of salt water that covers most of the earth’s surface.","覆蓋地球大部分表面的鹹水。","The biggest ocean is the Pacific."],
+["sprout","v.","發芽","When plants or seed produces new leaves or buds; to start to grow.","植物或種子長出新葉或新芽；開始生長。","Some seeds will sprout in a few days."],
+["pillows","n.","枕頭","Cloth filled with soft material and used to rest your head on in bed.","填充柔軟材料的布製品，用來在床上枕著頭休息。","How many pillows do you have on your bed?"],
+["trampoline","n.","彈跳床","A piece of equipment that is used for doing jumps in the air.","用來在空中跳躍的器材。","Some kids have a trampoline in their back yards."],
+["thrilled","adj.","非常興奮的","Very excited and pleased.","非常興奮且高興。","I was thrilled when I passed the English test."]
+],"W16":[
+["pronounce","v.","發音","To make the sound of a word or letter in a particular way.","以特定方式發出單字或字母的聲音。","It is difficult to pronounce some words in English correctly."],
+["scoundrel","n.","惡棍","A man who treats other people badly, especially by not being honest or moral.","對別人很壞的男人，尤其是不誠實或不道德。","The scoundrel disappeared with everyone’s money and was never seen again."],
+["snowplow","n.","除雪車","A vehicle or machine for cleaning snow from roads.","用來清除道路積雪的車輛或機器。","You can often see snowplows on the roads in Canada in winter."],
+["withdrawal","n.","提款","The act of taking an amount of money out of your bank account.","從銀行帳戶領出一筆錢的行為。","I made a large withdrawal yesterday to buy a new car."],
+["astronaut","n.","太空人","Someone who travels in space.","在太空中旅行的人。","Neil Armstrong was the first astronaut to walk on the moon."],
+["auction","n.","拍賣","A public sale in which things are sold to the person who offers the most money for them.","公開的銷售，物品賣給出價最高的人。","The painting sold for millions in the auction."],
+["moisture","n.","水氣、濕氣","Very small drops of water or other liquid that are present in the air or on a surface.","存在於空氣中或表面上的極小水滴或其他液體。","The plant's roots draw moisture from the soil."],
+["pointless","adj.","無意義的","Having no purpose or not worth doing.","沒有目的或不值得做。","It is pointless trying and fly if you don’t have wings."],
+["annoying","adj.","惱人的","Making somebody feel slightly angry.","讓人覺得有點生氣。","Some students are very annoying."],
+["spaghetti","n.","義大利麵","Pasta in the shape of long thin pieces that look like string when they are cooked.","形狀是細長條的麵食，煮熟後看起來像繩子。","Spaghetti in Italy is delicious."]
+],"W17":[
+["orphan","n.","孤兒","A child whose parents are dead.","父母已經過世的孩子。","He was an orphan and lived with his uncle."],
+["abandoned","adj.","被遺棄的","Left and no longer wanted, used or needed.","被丟下，不再被需要或使用。","There was an abandoned supermarket trolley in the middle of the road."],
+["scent","n.","香氣","The pleasant smell that something has.","某物所具有的宜人氣味。","The air was filled with the scent of wild flowers."],
+["curious","adj.","好奇的","Having a strong desire to know about something.","非常想知道某件事。","He is such a curious boy and is always asking questions."],
+["ivy","n.","常春藤","A climbing plant with dark green shiny leaves.","一種有深綠色亮葉的攀爬植物。","Many houses in the country are covered with ivy."],
+["breathless","adj.","喘不過氣的","having difficulty breathing.","呼吸困難。","I was breathless after climbing 8 flights of stairs to the gym."],
+["adorable","adj.","可愛的、討人喜愛的","Very attractive and easy to feel love for.","非常吸引人，讓人很容易喜愛。","The cute puppy looked adorable, and I wanted to take him home."],
+["untrimmed","adj.","未修剪的","Uncut or overgrown.","沒有剪過或過度生長。","My father’s beard was untrimmed and needed cutting. He looked like a homeless man!"],
+["curtain","n.","窗簾","A piece of cloth that is hung to cover a window.","掛起來遮住窗戶的一塊布。","It was ten in the morning but the curtains were still drawn."],
+["delight","n.","愉悅、樂事","A feeling of great pleasure and joy.","極大的愉快和喜悅的感覺。","This guitar is a delight to play."]
+]};
+const A=(d)=>`<svg class="ic" viewBox="0 0 24 24">${d}</svg>`;
+const I={
+pl:A('<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>'),
+sd:A('<path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>'),
+tr:A('<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>'),
+li:A('<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>'),
+ca:A('<rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 6V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2"/>'),
+pe:A('<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>'),
+sp:A('<path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/>'),
+sh:A('<path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/>'),
+bk:A('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z"/>')};
+const NAV=[["1. Airborn",["W10","W11","W12","W13","W10-W13 Review"]],["2. The Secret Garden",["W14","W15","W16","W17","W14-W17 Review"]],["3. Final Exam Review",[]]];
+let cur="W10",tab="list",qmode="listen",lmode="word",order=[],opened=new Set(),qs=[],checked=false;
+const $=s=>document.querySelector(s);
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function speak(t){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u)}
+function mask(s,w,r="_____"){return s.replace(new RegExp("\\b"+w+"\\w*","ig"),r)}
+function sd(i){speak(mask(DATA[cur][i][3],DATA[cur][i][0],"blank"))}
+
+function side(){
+  $("#side").innerHTML=NAV.map(([g,items])=>{
+    const head=`<h3>${g.startsWith("1")?I.pl:I.sd}${g}</h3>`;
+    const rows=items.map(i=>`<button class="nav sub ${i===cur?"on":""}" onclick="go('${i}')">${i}</button>`).join("");
+    return g.startsWith("3")?`<button class="nav ${cur==="FINAL"?"on":""}" onclick="go('FINAL')" style="font-weight:700;color:${cur==="FINAL"?"#fff":"var(--ac-d)"};margin-top:18px">${I.tr}${g}</button>`:head+rows;
+  }).join("");
+}
+function go(w){cur=w;tab="list";order=[];opened.clear();qs=[];side();render()}
+function render(){
+  const words=DATA[cur];
+  if(!words){$("#view").innerHTML=`<div class="soon">${I.bk}${cur==="FINAL"?"Final Exam Review":cur} 內容即將推出</div>`;return}
+  if(!order.length)order=words.map((_,i)=>i);
+  const tabs=`<div class="tabs">${[["list","Voc List",I.li],["pop","Pop Card",I.ca],["quiz","Quiz",I.pe]].map(([k,l,ic])=>`<button class="${tab===k?"on":""}" onclick="tab='${k}';qs=[];render()">${ic}${l}</button>`).join("")}</div>`;
+  let body="";
+  if(tab==="list")body=`<table><tr><th>週</th><th>單字</th><th>詞性</th><th>中文</th><th>英文定義</th><th>定義翻譯</th></tr>${words.map(w=>`<tr><td><span class="badge">${cur}</span></td><td class="w">${w[0]}</td><td class="pos">${w[1]}</td><td class="zh">${w[2]}</td><td>${w[3]}<br><small style="color:var(--mu)">e.g. ${w[5]}</small></td><td class="tr">${w[4]}</td></tr>`).join("")}</table>`;
+  if(tab==="pop")body=`<div class="bar"><button class="btn p" onclick="opened=new Set(order);render()">全部打開</button><button class="btn" onclick="opened.clear();render()">全部關上</button><button class="btn" onclick="order=shuffle(order);opened.clear();render()">${I.sh}Random</button></div><div class="grid">${order.map((i,n)=>{const w=words[i],o=opened.has(i);return o?`<div class="card open" onclick="opened.delete(${i});render()"><div class="big">${w[0]}</div><div class="pos">${w[1]}</div><div class="zh">${w[2]}</div><div class="en">${w[3]}</div><div class="tr">${w[4]}</div></div>`:`<div class="card" onclick="opened.add(${i});render()"><div class="ico">${I.bk}</div><div class="no">${cur} · ${n+1} / ${words.length}</div><button class="sp" onclick="event.stopPropagation();speak(DATA.${cur}[${i}][0])">${I.sp}朗讀單字</button><button class="sp" onclick="event.stopPropagation();speak(DATA.${cur}[${i}][3])">${I.sp}朗讀定義</button></div>`}).join("")}</div>`;
+  if(tab==="quiz"){
+    if(!qs.length){qs=shuffle(words.map((_,i)=>i));checked=false}
+    const desc={listen:lmode==="word"?"聽朗讀單字，輸入單字拼法":"聽朗讀定義（單字會以 blank 代替），輸入單字拼法",def:"看定義，輸入單字拼法",sent:"例句填空，輸入單字"}[qmode];
+    body=`<div class="bar">${[["listen","① Listening"],["def","② Definition"],["sent","③ Sentence"]].map(([k,l])=>`<button class="btn ${qmode===k?"p":""}" onclick="qmode='${k}';qs=[];render()">${l}</button>`).join("")}</div>
+    ${qmode==="listen"?`<div class="bar">${[["word","朗讀單字"],["def","朗讀定義"]].map(([k,l])=>`<button class="btn ${lmode===k?"p":""}" onclick="lmode='${k}';qs=[];render()">${l}</button>`).join("")}</div>`:""}<div class="bar"><span style="color:var(--mu)">${desc}（範圍 ${cur}，共 ${words.length} 題）</span><span style="flex:1"></span><button class="btn" onclick="qs=[];render()">${I.sh}Random（重新隨機）</button><button class="btn p" onclick="check()">檢查答案</button></div><div id="score" class="score"></div>
+    ${qs.map((i,n)=>{const w=words[i];const prompt=qmode==="listen"?(lmode==="word"?`<button class="btn" onclick="speak(DATA.${cur}[${i}][0])">${I.sp}播放單字</button>`:`<button class="btn" onclick="sd(${i})">${I.sp}播放定義</button>`):qmode==="def"?`<p>${esc(mask(w[3],w[0]))}</p>`:`<p>${esc(mask(w[5],w[0]))}</p>`;return`<div class="q" id="q${n}"><div class="n">${n+1}</div><div class="b">${prompt}<br><input id="a${n}" placeholder="輸入拼法" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="fb" id="f${n}"></div></div></div>`}).join("")}`;
+  }
+  $("#view").innerHTML=tabs+body;
+}
+function check(){
+  let ok=0;
+  qs.forEach((i,n)=>{const w=DATA[cur][i][0],v=$("#a"+n).value.trim().toLowerCase(),r=v===w;if(r)ok++;
+    $("#q"+n).className="q "+(r?"ok":"no");$("#f"+n).innerHTML=r?"✅ 正確":`❌ 正確答案：${w}`;$("#f"+n).style.color=r?"#3a9d5d":"#d9534f"});
+  $("#score").textContent=`得分：${ok} / ${qs.length}`;
+}
+side();render();
+</script>
+</body>
+</html>
